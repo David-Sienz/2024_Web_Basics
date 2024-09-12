@@ -1,0 +1,14 @@
+div{
+    background-color: cadetblue;
+    border-style: solid;
+}
+
+.subtitle{
+    background-color: blueviolet;
+    font-size: 15px;
+}
+
+.title{
+    background-color: darkblue;
+    font-size: 35px;
+}
