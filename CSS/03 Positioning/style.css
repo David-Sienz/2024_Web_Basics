@@ -1,0 +1,11 @@
+div {
+  border-style: solid;
+  height: 100px;
+}
+
+.div1 {
+  background-color: red;
+  position: relative;
+  left: 5px;
+  bottom: 5px;
+}
