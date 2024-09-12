@@ -1,0 +1,25 @@
+div {
+  background-color: brown;
+}
+
+/*Id-Selektor*/
+#heading {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  padding: 5px;
+}
+
+/*Klassenselektor*/
+#subtitle {
+  font-size: 20px;
+  color: white;
+  padding: 5px;
+  background-color: rgb(234, 0, 255);
+}
+
+#text {
+  font-size: 16px;
+  color: white;
+  background-color: blue;
+}
