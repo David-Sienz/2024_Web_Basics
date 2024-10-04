@@ -1,0 +1,38 @@
+.main {
+  height: 300px;
+  width: 460px;
+  background-color: aqua;
+}
+
+.sub {
+  height: 100px;
+  width: 100px;
+  background-color: brown;
+}
+
+.sidebar {
+  background-color: purple;
+  height: 150px;
+  width: 150px;
+}
+
+.navigation {
+  background-color: yellow;
+  height: 100px;
+}
+
+.navigation1 {
+  background-color: yellowgreen;
+}
+
+.navigation2 {
+  background-color: yellowgreen;
+}
+
+.navigation3 {
+  background-color: yellowgreen;
+}
+
+.navigation4 {
+  background-color: yellowgreen;
+}
