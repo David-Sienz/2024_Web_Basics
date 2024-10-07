@@ -17,12 +17,13 @@ li {
   font-size: 20px;
   font-weight: bold;
   height: 300px;
-  width: 460px;
+  width: 400px;
   margin: 20px;
   padding: 20px;
   background-color: rgb(102, 132, 149);
-  position: relative;
   border: 2px solid black;
+  position: absolute;
+  top: 140px;
 }
 
 .sub {
@@ -42,27 +43,30 @@ li {
   width: 150px;
   position: absolute;
   right: 0px;
-  top: 0px;
-  border-bottom: 2px solid black;
+  bottom: 0px;
+  border-top: 2px solid black;
   border-left: 2px solid black;
 }
 
 .navigation {
   background-color: yellow;
   height: 100px;
-  margin-top: 50px;
   padding: 20px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  border-top: 2px solid black;
   border-bottom: 2px solid black;
+}
+
+.navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
 }
 
 .navigation-box {
   background-color: yellowgreen;
-  height: 75px;
-  width: 75px;
+  height: 60px;
+  width: 60px;
   border: 2px solid black;
 }
