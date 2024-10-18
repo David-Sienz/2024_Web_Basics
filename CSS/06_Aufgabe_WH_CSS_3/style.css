@@ -1,0 +1,66 @@
+.box {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  height: 600px;
+  width: 1000px;
+  border: 2px solid black;
+  margin: 75px;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  padding: 20px;
+  padding-right: 350px;
+}
+
+.sub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  width: 150px;
+  background-color: lightgreen;
+  border: 2px solid black;
+}
+
+.sub1 {
+  height: 50px;
+  width: 50px;
+  border: 2px solid black;
+}
+
+.navigation {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  right: 0px;
+  bottom: 0px;
+  background-color: lightblue;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+}
+
+.navigation-box1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+}
+
+.navigation-box2 {
+  position: absolute;
+  left: -30px;
+  bottom: 0px;
+  background-color: black;
+  height: 70px;
+  width: 70px;
+  border: 2px solid black;
+}
