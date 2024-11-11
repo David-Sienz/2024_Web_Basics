@@ -1,26 +1,59 @@
+body {
+  background-image: url("pictures/background.avif");
+}
+
 .header {
   background-color: black;
   height: 83px;
-  color: rgba(128, 128, 128, 0.764);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  letter-spacing: 0.0125rem;
-  font-size: 14px;
+  color: #616161;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.025rem;
+  font-size: 15px;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.options {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.options ul li {
+  display: inline-block;
+  padding: 10px;
+  font-family: "Open Sans", sans-serif;
 }
 
-.logo {
+.logo img {
+  height: 40px;
+  width: 40px;
 }
 
 .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.icons img {
+  height: 27px;
+  width: 27px;
+}
+
+.icons > *:hover {
+  color: white;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+
+.options > ul > li:hover {
+  color: white;
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+}
+
+.login {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3px;
 }
