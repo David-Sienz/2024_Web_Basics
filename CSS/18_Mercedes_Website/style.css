@@ -1,5 +1,15 @@
 body {
-  background-image: url("pictures/background.avif");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.9),
+      rgba(255, 255, 255, 0)
+    ),
+    url("pictures/background.avif");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
 }
 
 .header {
@@ -16,10 +26,22 @@ body {
   padding-right: 40px;
 }
 
+.options ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .options ul li {
   display: inline-block;
-  padding: 10px;
+  padding: 0 15px;
+  color: #616161;
   font-family: "Open Sans", sans-serif;
+  cursor: pointer;
+}
+
+.options ul li:hover {
+  color: white;
 }
 
 .logo img {
@@ -40,13 +62,6 @@ body {
 }
 
 .icons > *:hover {
-  color: white;
-  filter: brightness(0) invert(1);
-  cursor: pointer;
-}
-
-.options > ul > li:hover {
-  color: white;
   filter: brightness(0) invert(1);
   cursor: pointer;
 }
@@ -55,5 +70,86 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 3px;
+  gap: 5px;
+  color: #616161;
+}
+
+.login:hover p {
+  color: white;
+}
+
+.background {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  text-align: left;
+  color: #333;
+}
+
+#background-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.gradient {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #fff, rgba(0, 0, 0, 0.001) 50%),
+    linear-gradient(90deg, #fff, rgba(0, 0, 0, 0.001) 50%);
+}
+
+.gradientcontent {
+  position: relative;
+  padding: 0 100px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.gradientcontent h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  letter-spacing: -0.22rem;
+  font-stretch: ultra-condensed;
+  margin-bottom: 20px;
+}
+
+.gradientcontent p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 50px;
+}
+
+.minimenu {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  padding: 10px 20px;
+  border: 1px solid #333;
+  color: #333;
+  cursor: pointer;
+}
+
+.box#box1 {
+  background-color: white;
+  color: black;
+}
+
+.box#box2 {
+  background-color: #0078d7;
+  color: white;
+}
+
+.box1:hover {
+  background-color: #333;
+  color: white;
 }
