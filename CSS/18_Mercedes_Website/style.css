@@ -6,9 +6,9 @@ body {
     ),
     url("pictures/background.avif");
   background-size: cover;
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   margin: 0;
 }
 
@@ -89,7 +89,7 @@ body {
 
 #background-image {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -152,4 +152,25 @@ body {
 .box1:hover {
   background-color: #333;
   color: white;
+}
+
+.chatbot {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.chatbot img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
