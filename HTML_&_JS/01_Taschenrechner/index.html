@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>01 Zugriff JS HTML</title>
+    <title>01 Taschenrechner</title>
     <script src="script.js" defer></script>
   </head>
   <body>
     <h1 id="heading">Super Page</h1>
     <div id="content">
-      A<input type="text" id="number1" /> B<input type="text" id="number2" />
-      <button>Berechnen</button>
+      A<input type="text" id="input1" /> B<input type="text" id="input2" />
+      <button onclick="add()">Addieren</button>
+      <button onclick="subtract()">Subtrahieren</button>
+      <button onclick="multiply()">Multiplizieren</button>
+      <button onclick="divide()">Dividieren</button>
     </div>
   </body>
 </html>
