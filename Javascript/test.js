@@ -3,7 +3,7 @@ let sum = 0;
 for (var i = 7; i < 344; i++) {
   if (i % 12 === 0) {
     sum += 3 * i;
-  } else {
+  } else if (i % 2 === 0) {
     sum += i;
   }
 }
