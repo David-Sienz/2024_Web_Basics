@@ -27,6 +27,10 @@ function getNextMatchForTeam(teamId) {
     .then((json) => {
       console.log(json);
       let html = "<div id='nextMatch'>";
-      html += `<div>${json[0].Team1.TeamName} vs. ${json[0].Team2.TeamName}</div>`;
+      html += `<div>${json.matchDateTime}</div>`;
+
+      html += `<div><img width="30px" src="${json.team1.teamIconUrl}"/>${json.team1.teamName} vs. ${json.team2.teamName}</div>`;
+      html += "</div>";
+      document.getElementById("nextMatch").innerHTML = html;
     });
 }
